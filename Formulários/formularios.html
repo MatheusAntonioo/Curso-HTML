@@ -1,0 +1,85 @@
+<!--
+  Formulários:
+
+  - Inputs
+    -Texto
+    -Email
+    -Número
+    -Telefone
+  -Select
+  -Radio
+  -Submit
+  -Reset
+-->
+
+<!-- Inputs -->
+<form action="pagina.html"> <!-- Action é para onde o formulário ira enviar -->
+  <label for="name">Nome</label>
+  <input type="text" name="name" id="name" required/> <!-- Texto -->
+  <br/><br/>
+  <label for="email">Email</label>
+  <input type="email" name="email" id="email"/> <!-- Email -->
+  <br/><br/>
+  <label for="idade">Idade</label>
+  <input type="number" name="idade" id="idade"/> <!-- Número -->
+  <br/><br/>
+  <label for="telefone">Telefone</label>
+  <input type="tel" name="telefone" id="telefone"/> <!-- Telefone -->
+
+  <br/><br/>
+
+  <!-- Select -->
+  <label for="genero">Gênero</label>
+  <select name="genero" id="genero" required> <!-- Required torna obrigatório o campo-->
+    <option value="">Selecione</option>
+    <option value="M">Masculino</option>
+    <option value="F">Feminino</option>
+    <option value="NA">Não Informado</option>
+  </select>
+
+  <br/><br/>
+
+  <label for="estado">Estado</label>
+  <select name="estado" id="estado" required>
+    <option value="">Selecione</option>
+    <optgroup label="Sul">
+      <option value="PR">Paraná</option>
+      <option value="SC">Santa Catarina</option>
+      <option value="RS">Rio Grande do Sul</option>
+    </optgroup>
+    <optgroup label="Sudeste">
+      <option value="SP">São Paulo</option>
+      <option value="RJ">Rio de Janeiro</option>
+      <option value="MG">Minas Gerais</option>
+      <option value="ES">Espirito Santo</option>
+    </optgroup>
+  </select>
+  
+  <br><br>
+  
+  <!-- Radio box-->
+  <label>Qual sua linguagem favorita?</label>
+  <br>
+  <input type="radio" name="favorita" id="fav1" value="javascript"/>
+  <label for="javascript">JavaScript</label>
+  
+  <input type="radio" name="favorita" id="fav2" value="python"/>
+  <label for="python">Python</label>
+  
+  <input type="radio" name="favorita" id="fav3" value="c"/>
+  <label for="c">C/C++</label>
+  
+  <br><br>
+  
+  <!-- Checkbox -->
+  <input type="checkbox" name="aceito" id="aceito" required/>
+  <label for="aceito">Aceito os termos de uso</label>
+
+  <br><br>
+
+  <!-- Submit / Reset -->
+  <input type="submit" value="Enviar"/>
+
+  <input type="reset" value="Limpar"/>
+
+</form>
